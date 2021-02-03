@@ -1,6 +1,5 @@
 import math
 import random
-import io
 import numpy as np
 import pygame
 import program
@@ -152,7 +151,7 @@ def think(enemy, player):
 def game_loop():
     p1 = Ship("player",0,0,0,0.01, 30,1)
     e = []
-    e_num = 200
+    e_num = 20
     init_ships(p1,e, e_num)
     radius = 100
     circle = pygame.Surface((2*radius,2*radius)).convert_alpha()
